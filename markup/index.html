@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Scentbird · Payment</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta
+        name="description" content="">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1">
 
         <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -53,7 +55,8 @@
                                     <dt class="order__details-title">Credit (Balance $100)</dt>
                                     <dd class="order__details-value">
                                         $50
-                                        <input class="checkbox" type="checkbox" name="">
+                                        <input class="checkbox" type="checkbox"
+                                        name="">
                                     </dd>
                                 </div>
                             </dl>
@@ -83,57 +86,133 @@
                     <form class="form">
                         <div class="form__row">
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="Email address">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="email"
+                                        name="email"
+                                        placeholder="Email address"
+                                        autocomplete="email"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell">
-                                <input class="input" type="password" name="" placeholder="Password">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="password"
+                                        name="password"
+                                        placeholder="Password"
+                                        autocomplete="new-password"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="form__error">
-                            ERROR! This email has been already registered. Please <a class="link link_accent" href="#">login</a> first or <a class="link link_accent" href="#">click here</a> to get account details emailed to you.
-                        </div>
-                        <div class="form__question">
-                            Have an account? <a class="link link_accent" href="#">Log in</a>.
-                        </div>
-                    </form>
-
-                    <h2 class="heading">Shipping address</h2>
-                    <form class="form">
+                        <h2 class="heading">Shipping address</h2>
                         <div class="form__row">
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="First name">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="first"
+                                        placeholder="First name"
+                                        autocomplete="given-name"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="Last name">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="last"
+                                        placeholder="Last name"
+                                        autocomplete="family-name"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="form__row">
                             <div class="form__cell form__cell_2of3">
-                                <input class="input" type="text" name="" placeholder="Street address">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="street"
+                                        placeholder="Street address"
+                                        autocomplete="street-address"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell form__cell_1of3">
-                                <input class="input" type="text" name="" placeholder="Apt/Suite (Optional)">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="apt"
+                                        placeholder="Apt/Suite (Optional)">
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="form__row">
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="ZIP Code">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="number"
+                                        name="zip"
+                                        placeholder="ZIP Code"
+                                        autocomplete="postal-code"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="State">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="state"
+                                        placeholder="State"
+                                        autocomplete="on"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="City">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="city"
+                                        placeholder="City"
+                                        autocomplete="on"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="form__row">
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="Country">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="text"
+                                        name="country"
+                                        placeholder="Country"
+                                        autocomplete="country"
+                                        required>
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="form__row">
                             <div class="form__cell">
-                                <input class="input" type="text" name="" placeholder="Mobile number (Optional)">
+                                <div class="form__group">
+                                    <input class="input"
+                                        type="tel"
+                                        name="phone"
+                                        placeholder="Mobile number (Optional)"
+                                        autocomplete="tel">
+                                    <div class="form__message"></div>
+                                </div>
                             </div>
                             <div class="form__cell">
                                 <div class="form__info">
@@ -142,79 +221,103 @@
                             </div>
                         </div>
                         <label class="label">
-                            <input class="checkbox" type="checkbox">
+                            <input class="checkbox" type="checkbox" checked>
                             Use this address as my billing address
                         </label>
-                    </form>
-
-                    <h2 class="heading">Secure credit card payment</h2>
-                    <form class="form form_gray payment">
-                        <div class="form__row">
-                            <div class="form__cell">
-                                <div class="payment__security">
-                                    <img class="payment__shield" src="img/payment__shield.svg">
-                                    128-bit encryption. you’re safe
+                        <h2 class="heading">Secure credit card payment</h2>
+                        <div class="payment">
+                            <div class="form__row">
+                                <div class="form__cell">
+                                    <div class="payment__security">
+                                        <img class="payment__shield" src="img/payment__shield.svg">
+                                        128-bit encryption. you’re safe
+                                    </div>
+                                </div>
+                                <div class="form__cell">
+                                    <picture class="payment__cards">
+                                        <source srcset="img/payment__cards@2x.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                                        <img class="payment__cards-image" src="img/payment__cards.png" alt="Visa, MasterCard, Discover Network, American Express">
+                                    </picture>
                                 </div>
                             </div>
-                            <div class="form__cell">
-                                <picture class="payment__cards">
-                                    <source srcset="img/payment__cards@2x.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
-                                    <img class="payment__cards-image" src="img/payment__cards.png" alt="Visa, MasterCard, Discover Network, American Express">
-                                </picture>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__cell form__cell_2of3">
-                                <input class="input" type="text" name="" placeholder="Credit card number">
-                            </div>
-                            <div class="form__cell form__cell_1of3">
-                                <div class="form__group">
-                                    <input class="input" type="text" name="" placeholder="Security code">
-                                    <div class="form__hint">
-                                    ?
+                            <div class="form__row">
+                                <div class="form__cell form__cell_2of3">
+                                    <div class="form__group">
+                                        <input class="input"
+                                            type="text"
+                                            name="card"
+                                            placeholder="Credit card number"
+                                            autocomplete="cc-number">
+                                        <div class="form__message"></div>
+                                    </div>
+                                </div>
+                                <div class="form__cell form__cell_1of3">
+                                    <div class="form__input-group">
+                                        <div class="form__group">
+                                            <input class="input"
+                                                type="password"
+                                                name="code"
+                                                placeholder="Security code"
+                                                autocomplete="cc-csc"
+                                                inputmode="numeric"
+                                                pattern="[0-9]*"
+                                                maxlength="3">
+                                            <div class="form__message"></div>
+                                        </div>
+                                        <div class="form__hint">
+                                        ?
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="form__row">
+                                <div class="form__cell">
+                                    <div class="form__group">
+                                        <input class="input"
+                                                type="number"
+                                                name="exp-month"
+                                                placeholder="MM"
+                                                autocomplete="cc-exp-month"
+                                                required>
+                                        <div class="form__message"></div>
+                                    </div>
+                                </div>
+                                <div class="form__cell">
+                                    <div class="form__group">
+                                        <input class="input"
+                                                type="number"
+                                                name="exp-year"
+                                                placeholder="YYYY"
+                                                autocomplete="cc-exp-year"
+                                                required>
+                                        <div class="form__message"></div>
+                                    </div>
+                                </div>
+                                <div class="form__cell">
+                                    Exp.
+                                </div>
+                                <div class="form__cell"></div>
+                                <div class="form__cell"></div>
+                            </div>
                         </div>
-                        <div class="form__row">
-                            <div class="form__cell form__cell_min">
-                                <select class="select">
-                                    <option class="select__option" disabled selected>Month</option>
-                                    <option class="select__option">January</option>
-                                </select>
+                        <div class="page__controls">
+                            <div class="page__control">
+                                <a class="link link_gray" href="#">Back</a>
                             </div>
-                            <div class="form__cell form__cell_min">
-                                <select class="select">
-                                    <option class="select__option" disabled selected>Year</option>
-                                    <option class="select__option">2017</option>
-                                </select>
-                            </div>
-                            <div class="form__cell form__cell_min">
-                                <select class="select">
-                                    <option class="select__option" disabled selected>Exp.</option>
-                                    <option class="select__option">2017</option>
-                                </select>
-                            </div>
-                            <div class="form__cell">
+                            <div class="page__control">
+                                <button class="button" type="submit">
+                                    <div class="button__title">
+                                        Buy now
+                                    </div>
+                                    <img class="button__icon" src="img/arrow.svg">
+                                </button>
                             </div>
                         </div>
                     </form>
-                    <div class="page__controls">
-                        <div class="page__control">
-                            <a class="link link_gray" href="#">Back</a>
-                        </div>
-                        <div class="page__control">
-                            <button class="button">
-                                <div class="button__title">
-                                    Buy now
-                                </div>
-                                <img class="button__icon" src="img/arrow.svg">
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </main>
-        <script src="js/main.js"></script>
+        <script src="js/vendor/validate.min.js"></script>
+        <script src="js/sb.validation.js"></script>
     </body>
 </html>

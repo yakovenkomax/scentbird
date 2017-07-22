@@ -1,8 +1,17 @@
-.payment {}
+.payment {
+    padding: var(--gap-md) var(--gap-lg);
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-gray-light);
+}
+
+.payment .input {
+    background-color: #fff;
+}
 
 .payment__security {
     display: flex;
     align-items: center;
+    padding-bottom: var(--gap-md);
     font-size: var(--font-size-sm);
     text-transform: uppercase;
     color: var(--color-green);
@@ -16,6 +25,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-bottom: var(--gap-md);
 }
 
 .payment__cards-image {
