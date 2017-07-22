@@ -3,23 +3,218 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Scentbird · Subscribe</title>
+        <title>Scentbird · Payment</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--<link rel="apple-touch-icon" href="apple-touch-icon.png">-->
-        <!-- Place favicon.ico in the root directory -->
-
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
-    <body>
+    <body class="layout">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header class="header">
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="img/logo.svg" alt="Scentbird">
+            </a>
+            <nav class="nav"></nav>
+        </header>
+        <main class="page">
+            <div class="page__row">
+                <div class="page__column page__column_thin">
+                    <div class="order">
+                        <picture class="order__picture">
+                            <source srcset="img/order@2x.jpg" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                            <img class="order__image" src="img/order.jpg" alt="">
+                        </picture>
+                        <div class="order__info">
+                            <dl class="order__details">
+                                <div class="order__details-item">
+                                    <dt class="order__details-title">Monthly subscription</dt>
+                                    <dd class="order__details-value">$14.95</dd>
+                                </div>
+                                <div class="order__details-item">
+                                    <dt class="order__details-title">Shipping</dt>
+                                    <dd class="order__details-value">FREE</dd>
+                                </div>
+                                <div class="order__details-item">
+                                    <dt class="order__details-title">Tax</dt>
+                                    <dd class="order__details-value">$2.35</dd>
+                                </div>
+                                <div class="order__details-item">
+                                    <dt class="order__details-title">Discount</dt>
+                                    <dd class="order__details-value order__details-value_accent">-$5</dd>
+                                </div>
+                                <div class="order__details-item">
+                                    <dt class="order__details-title">Credit (Balance $100)</dt>
+                                    <dd class="order__details-value">
+                                        $50
+                                        <input class="checkbox" type="checkbox" name="">
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl class="order__total">
+                                <dt class="order__total-title">Total</dt>
+                                <dd class="order__total-value">$25.00</dd>
+                            </dl>
+                            <div class="order__coupon">
+                                Have a <a class="link link_accent" href="#">coupon code</a>?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <img class="info__image" src="img/info.svg" alt="">
+                        <p class="info__description">
+                            You will receive an email confirmation when recipient accepts your gift. Scentbird ships between the 15th and the 18th of every month. Recipient will receive an email confirmation of shipment every month. Please allow 5-7 days for delivery.
+                        </p>
+                    </div>
+                </div>
+                <div class="page__column">
+                    <div class="page__heading">
+                        <h1 class="title">Month-to-month subscription</h1>
+                        <span class="subtitle">Billed monthly. Renews automatically, cancel any time. Free shipping.</span>
+                    </div>
 
+                    <h2 class="heading">Create account</h2>
+                    <form class="form">
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="Email address">
+                            </div>
+                            <div class="form__cell">
+                                <input class="input" type="password" name="" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form__error">
+                            ERROR! This email has been already registered. Please <a class="link link_accent" href="#">login</a> first or <a class="link link_accent" href="#">click here</a> to get account details emailed to you.
+                        </div>
+                        <div class="form__question">
+                            Have an account? <a class="link link_accent" href="#">Log in</a>.
+                        </div>
+                    </form>
+
+                    <h2 class="heading">Shipping address</h2>
+                    <form class="form">
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="First name">
+                            </div>
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell form__cell_2of3">
+                                <input class="input" type="text" name="" placeholder="Street address">
+                            </div>
+                            <div class="form__cell form__cell_1of3">
+                                <input class="input" type="text" name="" placeholder="Apt/Suite (Optional)">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="ZIP Code">
+                            </div>
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="State">
+                            </div>
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="City">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <input class="input" type="text" name="" placeholder="Mobile number (Optional)">
+                            </div>
+                            <div class="form__cell">
+                                <div class="form__info">
+                                    We may send you special discounts and offers
+                                </div>
+                            </div>
+                        </div>
+                        <label class="label">
+                            <input class="checkbox" type="checkbox">
+                            Use this address as my billing address
+                        </label>
+                    </form>
+
+                    <h2 class="heading">Secure credit card payment</h2>
+                    <form class="form form_gray payment">
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <div class="payment__security">
+                                    <img class="payment__shield" src="img/payment__shield.svg">
+                                    128-bit encryption. you’re safe
+                                </div>
+                            </div>
+                            <div class="form__cell">
+                                <picture class="payment__cards">
+                                    <source srcset="img/payment__cards@2x.png" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)">
+                                    <img class="payment__cards-image" src="img/payment__cards.png" alt="Visa, MasterCard, Discover Network, American Express">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell form__cell_2of3">
+                                <input class="input" type="text" name="" placeholder="Credit card number">
+                            </div>
+                            <div class="form__cell form__cell_1of3">
+                                <div class="form__group">
+                                    <input class="input" type="text" name="" placeholder="Security code">
+                                    <div class="form__hint">
+                                    ?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell form__cell_min">
+                                <select class="select">
+                                    <option class="select__option" disabled selected>Month</option>
+                                    <option class="select__option">January</option>
+                                </select>
+                            </div>
+                            <div class="form__cell form__cell_min">
+                                <select class="select">
+                                    <option class="select__option" disabled selected>Year</option>
+                                    <option class="select__option">2017</option>
+                                </select>
+                            </div>
+                            <div class="form__cell form__cell_min">
+                                <select class="select">
+                                    <option class="select__option" disabled selected>Exp.</option>
+                                    <option class="select__option">2017</option>
+                                </select>
+                            </div>
+                            <div class="form__cell">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="page__controls">
+                        <div class="page__control">
+                            <a class="link link_gray" href="#">Back</a>
+                        </div>
+                        <div class="page__control">
+                            <button class="button">
+                                <div class="button__title">
+                                    Buy now
+                                </div>
+                                <img class="button__icon" src="img/arrow.svg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src="js/main.js"></script>
     </body>
 </html>

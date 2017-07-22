@@ -1,0 +1,11 @@
+.info {
+    margin-top: var(--gap-lg);
+}
+
+.info__image {
+    max-width: 100%;
+}
+
+.info__description {
+    margin-top: var(--gap-md);font-size: var(--font-size-sm);line-height: 1.55;
+}

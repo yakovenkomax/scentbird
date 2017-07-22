@@ -1,0 +1,24 @@
+.payment {}
+
+.payment__security {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    color: var(--color-green);
+}
+
+.payment__shield {
+    margin-right: var(--gap-xs);
+}
+
+.payment__cards {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.payment__cards-image {
+    display: block;
+    width: 145px;
+}

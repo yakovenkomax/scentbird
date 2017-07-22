@@ -1,0 +1,32 @@
+:root {
+    /* Colors */
+    --color-black: #000;
+    --color-gray: #E6E6E6;
+    --color-gray-dark: #9B9B9B;
+    --color-gray-light: #FAFAFA;
+    --color-pink: #FF458F;
+    --color-pink-light: #FF6BA6;
+    --color-green: #7DBE65;
+    --color-red: #FD6464;
+
+    /* Breakpoints */
+    --breakpoint-tablet: 1200px;
+    --breakpoint-phone: 750px;
+
+    /* Layout */
+    --max-width: 1200px;
+    --gap-xs: 10px;
+    --gap-sm: 15px;
+    --gap-md: 20px;
+    --gap-lg: 30px;
+    --gap-xl: 40px;
+
+    /* Typography */
+    --font-family-main: 'Montserrat', Helvetica, Arial, sans-serif;
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-heading: 22px;
+    --font-size-title: 32px;
+}
