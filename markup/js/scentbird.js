@@ -12,7 +12,8 @@
         password: {
             presence: true,
             length: {
-                minimum: 10
+                minimum: 10,
+                message: '10 characters minimum'
             }
         },
         first: {
@@ -34,6 +35,21 @@
             presence: true
         },
         country: {
+            presence: true
+        },
+        'b-street': {
+            presence: true
+        },
+        'b-zip': {
+            presence: true
+        },
+        'b-state': {
+            presence: true
+        },
+        'b-city': {
+            presence: true
+        },
+        'b-country': {
             presence: true
         },
         card: {
@@ -165,10 +181,11 @@
         if (typeof ccType === 'undefined') {
             return 'Invalid card number';
         } else {
+            let valueLength = value.toString().length;
             let lengthMin = ccTypes[ccType].valid_length[0];
             let lengthMax = ccTypes[ccType].valid_length[ccTypes[ccType].valid_length.length - 1];
 
-            if (value < lengthMin || value > lengthMax) {
+            if (valueLength < lengthMin || valueLength > lengthMax) {
                 return 'Invalid card number';
             }
         }
@@ -268,4 +285,22 @@
     function showSuccess() {
         console.log('Success!');
     }
+
+    const billingNode = document.querySelector('.billing');
+    const billingInputs = billingNode.querySelectorAll('.input, .textarea, .select');
+    const billingCheckbox = document.querySelector('.js-billing');
+
+    billingCheckbox.addEventListener('change', (event) => {
+        if (event.target.checked === true) {
+            billingNode.classList.add('billing_hidden');
+            billingInputs.forEach((input) => {
+                input.disabled = true;
+            });
+        } else {
+            billingNode.classList.remove('billing_hidden');
+            billingInputs.forEach((input) => {
+                input.disabled = false;
+            });
+        }
+    });
 })();
