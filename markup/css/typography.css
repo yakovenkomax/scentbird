@@ -7,7 +7,7 @@ body {
 
 .title {
     margin: 0;
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-xxl);
     line-height: 0.75;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -16,15 +16,20 @@ body {
 .subtitle {
     display: inline-block;
     margin-top: var(--gap-sm);
+    font-size: var(--font-size-md);
     color: var(--color-pink);
 }
 
 .heading {
     margin-top: var(--gap-xl);
     margin-bottom: var(--gap-md);
-    font-size: var(--font-size-heading);
+    font-size: var(--font-size-xl);
     line-height: 1;
     font-weight: 300;
+}
+
+.heading:first-child {
+    margin-top: 0;
 }
 
 .link {}
@@ -41,5 +46,25 @@ body {
     .heading {
         margin-top: var(--gap-lg);
         text-align: center;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        letter-spacing: 0;
+    }
+
+    .title {
+        line-height: 1.15;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        line-height: 1.42;
+    }
+
+    .heading {
+        margin-bottom: var(--gap-lg);
     }
 }

@@ -70,16 +70,41 @@
     .order {
         flex-direction: row;
     }
+
     .order__picture {
         flex-basis: 20%;
     }
+
     .order__image {
         height: 215px;
     }
+
     .order__info {
         margin: var(--gap-xs) 0;
     }
+
     .order__details-item {
         margin-top: var(--gap-sm);
+    }
+}
+
+@media (max-width: 750px) {
+    .order {
+        border: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .order__picture {
+        margin-top: var(--gap-xs);
+        margin-bottom: var(--gap-xl);
+    }
+
+    .order__image {
+        height: 154px;
+    }
+
+    .order__details {
+        padding: var(--gap-xs) 0 var(--gap-lg);
     }
 }

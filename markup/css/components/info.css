@@ -18,10 +18,30 @@
     .info {
         flex-direction: row;
     }
+
     .info__image {
         width: 45%;
     }
+
     .info__description {
         margin-left: var(--gap-md);
+    }
+}
+
+@media (max-width: 750px) {
+    .info {
+        flex-direction: column-reverse;
+        margin-top: var(--gap-sm);
+    }
+
+    .info__image {
+        width: auto;
+    }
+
+    .info__description {
+        margin-top: var(--gap-sm);
+        margin-left: 0;
+        font-size: var(--font-size-lg);
+        line-height: 1.3;
     }
 }

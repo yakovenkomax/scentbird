@@ -38,6 +38,7 @@
 
 .form__group {
     position: relative;
+    flex-grow: 1;
     padding-bottom: var(--gap-md);
 }
 
@@ -80,8 +81,7 @@
     padding-bottom: var(--gap-md);
 }
 
-.label {
-}
+.label {display: block;padding-bottom: var(--gap-md);}
 
 .input {
     box-sizing: border-box;
@@ -96,13 +96,13 @@
 .input::-webkit-calendar-picker-indicator {
     color: var(--color-pink-pale);
     background-color: transparent;
-} 
+}
 
 /* Override autocomplete colors */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill, 
+input:-webkit-autofill,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
@@ -114,10 +114,10 @@ select:-webkit-autofill:focus {
 }
 
 /* Remove default step controls */
-.input[type=number]::-webkit-inner-spin-button, 
-.input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
+.input[type=number]::-webkit-inner-spin-button,
+.input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .input::-webkit-input-placeholder {
@@ -177,3 +177,30 @@ select:-webkit-autofill:focus {
 
 .button__icon {
     margin-left: var(--gap-md);
+}
+
+@media (max-width: 1200px) {
+    .button {
+        padding-left: var(--gap-xl);
+        padding-right: var(--gap-xl);
+    }
+}
+
+@media (max-width: 750px) {
+    .form__row {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .button__title {
+        margin: auto;
+        font-size: var(--font-size-xl);
+    }
+
+    .button__icon {
+        display: none;
+    }
+}

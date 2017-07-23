@@ -18,6 +18,7 @@
 }
 
 .payment__shield {
+    width: 29px;
     margin-right: var(--gap-xs);
 }
 
@@ -56,3 +57,26 @@
     padding-bottom: var(--gap-md);
     color: var(--color-gray-dark);
 }
+
+
+@media (max-width: 750px) {
+    .payment {
+        margin: 0 calc(-1 * var(--gap-sm));
+        padding: var(--gap-md) var(--gap-sm);
+    }
+
+    .payment__security {
+        font-size: var(--font-size-xs);
+    }
+
+    .payment__shield {
+        width: 25px;
+    }
+
+    .payment__cards {
+        justify-content: flex-start;
+    }
+}
+
+
+
