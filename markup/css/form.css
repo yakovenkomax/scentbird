@@ -92,6 +92,12 @@
     -webkit-appearance: none;
 }
 
+/* Override default autocomplete arrow */
+.input::-webkit-calendar-picker-indicator {
+    color: var(--color-pink-pale);
+    background-color: transparent;
+} 
+
 /* Override autocomplete colors */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -107,6 +113,7 @@ select:-webkit-autofill:focus {
     -webkit-text-fill-color: var(--color-black);
 }
 
+/* Remove default step controls */
 .input[type=number]::-webkit-inner-spin-button, 
 .input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 

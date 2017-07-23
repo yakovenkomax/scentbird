@@ -364,6 +364,7 @@
                                                 name="exp-month"
                                                 placeholder="MM"
                                                 autocomplete="cc-exp-month"
+                                                list="months"
                                                 required>
                                         <div class="form__message"></div>
                                     </div>
@@ -375,6 +376,7 @@
                                                 name="exp-year"
                                                 placeholder="YYYY"
                                                 autocomplete="cc-exp-year"
+                                                list="years"
                                                 required>
                                         <div class="form__message"></div>
                                     </div>
@@ -411,6 +413,22 @@
                 </div>
             </div>
         </main>
+        <datalist id="months">
+            <option value="01">
+            <option value="02">
+            <option value="03">
+            <option value="04">
+            <option value="05">
+            <option value="06">
+            <option value="07">
+            <option value="08">
+            <option value="09">
+            <option value="10">
+            <option value="11">
+            <option value="12">
+        </datalist>
+        <datalist id="years">
+        </datalist>
         <script src="js/vendor/validate.min.js"></script>
         <script src="js/scentbird.js"></script>
     </body>

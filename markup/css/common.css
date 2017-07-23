@@ -10,10 +10,6 @@
     --color-green: #7DBE65;
     --color-red: #FD6464;
 
-    /* Breakpoints */
-    --breakpoint-tablet: 1200px;
-    --breakpoint-phone: 750px;
-
     /* Layout */
     --max-width: 1200px;
     --gap-xs: 10px;

@@ -286,6 +286,7 @@
         console.log('Success!');
     }
 
+    // Billing address show/hide
     const billingNode = document.querySelector('.billing');
     const billingInputs = billingNode.querySelectorAll('.input, .textarea, .select');
     const billingCheckbox = document.querySelector('.js-billing');
@@ -303,4 +304,14 @@
             });
         }
     });
+
+    // Fill years autocomplete list
+    const yearsDataList = document.querySelector('#years');
+    const currentYear = (new Date()).getFullYear();
+
+    for (let i = 0; i < 10; i++) {
+        let option = document.createElement('option');
+        option.value = currentYear + i;
+        yearsDataList.appendChild(option);
+    }
 })();
