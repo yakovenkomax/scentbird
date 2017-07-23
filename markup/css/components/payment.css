@@ -35,6 +35,19 @@
     width: 145px;
 }
 
+.payment__card::after {
+    content: url('../../img/lock.svg');
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 13px;
+    height: 20px;
+}
+
+.payment__card .input {
+    padding-right: var(--gap-xl);
+}
+
 .payment__exp {
     display: flex;
     box-sizing: border-box;

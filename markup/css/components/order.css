@@ -6,6 +6,7 @@
 }
 
 .order__picture {
+    flex-grow: 1;
     margin: var(--gap-md) 0;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .order__info {
+    flex-grow: 1;
     margin: var(--gap-md) 0;
 }
 
@@ -62,4 +64,22 @@
 
 .order__coupon {
     margin-top: var(--gap-lg);
+}
+
+@media (max-width: 1200px) {
+    .order {
+        flex-direction: row;
+    }
+    .order__picture {
+        flex-basis: 20%;
+    }
+    .order__image {
+        height: 215px;
+    }
+    .order__info {
+        margin: var(--gap-xs) 0;
+    }
+    .order__details-item {
+        margin-top: var(--gap-sm);
+    }
 }

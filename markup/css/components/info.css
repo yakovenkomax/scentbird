@@ -1,4 +1,6 @@
 .info {
+    display: flex;
+    flex-direction: column;
     margin-top: var(--gap-lg);
 }
 
@@ -7,5 +9,19 @@
 }
 
 .info__description {
-    margin-top: var(--gap-md);font-size: var(--font-size-sm);line-height: 1.55;
+    margin-top: var(--gap-md);
+    font-size: var(--font-size-sm);
+    line-height: 1.55;
+}
+
+@media (max-width: 1200px) {
+    .info {
+        flex-direction: row;
+    }
+    .info__image {
+        width: 45%;
+    }
+    .info__description {
+        margin-left: var(--gap-md);
+    }
 }

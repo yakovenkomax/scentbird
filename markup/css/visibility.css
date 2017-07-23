@@ -1,0 +1,25 @@
+@media (max-width: 750px) {
+    .hidden-phone-down {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hidden-tablet-down {
+        display: none !important;
+    }
+}
+
+@media (min-width: 751px) {
+    .hidden-tablet-up {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1201px) {
+    .hidden-desktop-up {
+        display: none !important;
+    }
+}
+
+

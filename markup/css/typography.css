@@ -1,6 +1,7 @@
 body {
     font-family: var(--font-family-main);
     font-size: var(--font-size-md);
+    letter-spacing: -0.015em;
     color: var(--color-black);
 }
 
@@ -34,4 +35,11 @@ body {
 
 .link_accent {
     color: var(--color-pink);
+}
+
+@media (max-width: 1200px) {
+    .heading {
+        margin-top: var(--gap-lg);
+        text-align: center;
+    }
 }

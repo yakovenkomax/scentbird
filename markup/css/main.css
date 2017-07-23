@@ -4,6 +4,7 @@
 @import 'typography.css';
 @import 'layout.css';
 @import 'form.css';
+@import 'visibility.css';
 
 @import 'components/order.css';
 @import 'components/info.css';
