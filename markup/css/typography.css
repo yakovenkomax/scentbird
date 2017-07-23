@@ -32,7 +32,13 @@ body {
     margin-top: 0;
 }
 
-.link {}
+.link {
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, currentColor 50%,rgba(0,0,0,0) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px .1em;
+    background-position: 0 1.07em;
+}
 
 .link_gray {
     color: var(--color-gray-dark);
@@ -40,6 +46,11 @@ body {
 
 .link_accent {
     color: var(--color-pink);
+}
+
+.link_dashed {
+    background-image: linear-gradient(to right, currentColor 50%,rgba(0,0,0,0) 50%);
+    background-size: 0.4em .1em;
 }
 
 @media (max-width: 1200px) {
