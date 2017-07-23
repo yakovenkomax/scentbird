@@ -23,6 +23,8 @@
 
 .payment__cards {
     display: flex;
+    box-sizing: border-box;
+    height: 100%;
     justify-content: flex-end;
     align-items: center;
     padding-bottom: var(--gap-md);
@@ -31,4 +33,13 @@
 .payment__cards-image {
     display: block;
     width: 145px;
+}
+
+.payment__exp {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+    padding-bottom: var(--gap-md);
+    color: var(--color-gray-dark);
 }

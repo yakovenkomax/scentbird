@@ -37,7 +37,8 @@
             presence: true
         },
         card: {
-            presence: true
+            presence: true,
+            card: true
         },
         code: {
             presence: true,
@@ -57,6 +58,121 @@
 
     // Override default error message for required fields
     validate.validators.presence.message = 'This field is required';
+
+    // Custom validator for credit card number
+    validate.validators.card = function(value, options, key, attributes) {
+
+        // Credit cards patterns
+        const ccTypes = {
+            amex: {
+                ranges: [{
+                    value: 34
+                },{
+                    value: 37
+                }],
+                valid_length: [15]
+            },
+            visa: {
+                ranges: [{
+                    value: 4
+                }],
+                valid_length: [13, 14, 15, 16, 17, 18, 19]
+            },
+            visa_electron: {
+                ranges: [{
+                    value: 4026
+                },{
+                    value: 417500
+                },{
+                    value: 4508
+                },{
+                    value: 4844
+                },{
+                    value: 4913
+                },{
+                    value: 4917
+                }],
+                valid_length: [16]
+            },
+            mastercard: {
+                ranges: [{
+                    from: 51,
+                    to: 55
+                },{
+                    from: 2221,
+                    to: 2720
+                }],
+                valid_length: [16]
+            },
+            maestro: {
+                ranges: [{
+                    value: 50
+                },{
+                    value: 69
+                }],
+                valid_length: [12, 13, 14, 15, 16, 17, 18, 19]
+            },
+            discover: {
+                ranges: [{
+                    value: 6011
+                },{
+                    from: 622126,
+                    to: 622925
+                },{
+                    from: 644,
+                    to: 649
+                },{
+                    value: 65
+                }],
+                valid_length: [16]
+            }
+        }
+
+        const ccType = detectCCType(value, ccTypes);
+
+        // Credit card type detection
+        function detectCCType(value, typesObject) {
+            let typesArray = [];
+
+            Object.keys(typesObject).forEach((key) => {
+                typesObject[key].ranges.forEach((range) => {
+                    let rangesArray = [];
+
+                    if (range.hasOwnProperty('value')) {
+                        rangesArray.push(range.value);
+                    } else {
+                        for (let rangeValue = range.from; rangeValue < range.to; rangeValue++) {
+                            rangesArray.push(rangeValue);
+                        }
+                    }
+
+                    rangesArray.forEach((rangeValue) => {
+                        let re = new RegExp(`^${rangeValue}`);
+
+                        if (value !== null && value.toString().match(re)) {
+                            typesArray.push(key);
+                        }
+                    });
+                });
+            });
+
+            if (typesArray.length !== 0) {
+                return typesArray[typesArray.length - 1];
+            }
+        }
+
+        // Validate input value
+        if (typeof ccType === 'undefined') {
+            return 'Invalid card number';
+        } else {
+            let lengthMin = ccTypes[ccType].valid_length[0];
+            let lengthMax = ccTypes[ccType].valid_length[ccTypes[ccType].valid_length.length - 1];
+
+            if (value < lengthMin || value > lengthMax) {
+                return 'Invalid card number';
+            }
+        }
+    };
 
     // Custom validator for credit card security code
     validate.validators.code = function(value, options, key, attributes) {
@@ -150,8 +266,6 @@
     }
 
     function showSuccess() {
-        // We made it \:D/
         console.log('Success!');
     }
-
 })();

@@ -197,7 +197,7 @@
                                         type="text"
                                         name="country"
                                         placeholder="Country"
-                                        autocomplete="country"
+                                        autocomplete="country-name"
                                         required>
                                     <div class="form__message"></div>
                                 </div>
@@ -244,7 +244,7 @@
                                 <div class="form__cell form__cell_2of3">
                                     <div class="form__group">
                                         <input class="input"
-                                            type="text"
+                                            type="number"
                                             name="card"
                                             placeholder="Credit card number"
                                             autocomplete="cc-number">
@@ -265,7 +265,7 @@
                                             <div class="form__message"></div>
                                         </div>
                                         <div class="form__hint">
-                                        ?
+                                            <img src="img/question.svg">
                                         </div>
                                     </div>
                                 </div>
@@ -294,7 +294,9 @@
                                     </div>
                                 </div>
                                 <div class="form__cell">
-                                    Exp.
+                                    <div class="payment__exp">
+                                        Exp.
+                                    </div>
                                 </div>
                                 <div class="form__cell"></div>
                                 <div class="form__cell"></div>
@@ -318,6 +320,6 @@
             </div>
         </main>
         <script src="js/vendor/validate.min.js"></script>
-        <script src="js/sb.validation.js"></script>
+        <script src="js/scentbird.js"></script>
     </body>
 </html>
