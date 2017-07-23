@@ -20,7 +20,9 @@
 
 .nav {}
 
-.page {}
+.page {
+    padding-bottom: var(--gap-xl);
+}
 
 .page__heading {
     margin-bottom: var(--gap-xl);

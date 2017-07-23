@@ -62,10 +62,13 @@
                                 <div class="order__details-item">
                                     <dt class="order__details-title">Credit (Balance $100)</dt>
                                     <dd class="order__details-value">
-                                        $50
-                                        <input class="checkbox"
-                                            type="checkbox"
-                                            name="">
+                                        <label class="checkbox checkbox_right">
+                                            <input class="checkbox__native"
+                                                type="checkbox"
+                                                name="credit">
+                                            <span class="checkbox__indicator"></span>
+                                            $50
+                                        </label>
                                     </dd>
                                 </div>
                             </dl>
@@ -232,8 +235,9 @@
                                 </div>
                             </div>
                         </div>
-                        <label class="label">
-                            <input class="checkbox js-billing" type="checkbox" checked>
+                        <label class="checkbox">
+                            <input class="checkbox__native js-billing" type="checkbox" checked>
+                            <span class="checkbox__indicator"></span>
                             Use this address as my billing address
                         </label>
                         <div class="billing billing_hidden">
