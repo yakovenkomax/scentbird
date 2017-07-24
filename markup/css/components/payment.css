@@ -4,7 +4,7 @@
     background-color: var(--color-gray-light);
 }
 
-.payment .input {
+.payment .input__field {
     background-color: #fff;
 }
 
@@ -45,7 +45,7 @@
     height: 20px;
 }
 
-.payment__card .input {
+.payment__card .input__field {
     padding-right: var(--gap-xl);
 }
 

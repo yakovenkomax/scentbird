@@ -120,23 +120,27 @@
                             <div class="form__row">
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="email"
-                                            name="email"
-                                            placeholder="Email address"
-                                            autocomplete="email"
-                                            required>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="email"
+                                                name="email"
+                                                autocomplete="email"
+                                                required>
+                                            <span class="input__label">Email address</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="password"
-                                            name="password"
-                                            placeholder="Password"
-                                            autocomplete="new-password"
-                                            required>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="password"
+                                                name="password"
+                                                autocomplete="new-password"
+                                                required>
+                                            <span class="input__label">Password</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
@@ -146,23 +150,27 @@
                         <div class="form__row">
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="first"
-                                        placeholder="First name"
-                                        autocomplete="given-name"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="first"
+                                            autocomplete="given-name"
+                                            required>
+                                        <span class="input__label">First name</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="last"
-                                        placeholder="Last name"
-                                        autocomplete="family-name"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="last"
+                                            autocomplete="family-name"
+                                            required>
+                                        <span class="input__label">Last name</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
@@ -170,21 +178,25 @@
                         <div class="form__row">
                             <div class="form__cell form__cell_2of3">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="street"
-                                        placeholder="Street address"
-                                        autocomplete="street-address"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="street"
+                                            autocomplete="street-address"
+                                            required>
+                                        <span class="input__label">Street address</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
                             <div class="form__cell form__cell_1of3">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="apt"
-                                        placeholder="Apt/Suite (Optional)">
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="apt">
+                                        <span class="input__label">Apt/Suite (Optional)</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
@@ -192,47 +204,40 @@
                         <div class="form__row">
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="number"
-                                        name="zip"
-                                        placeholder="ZIP Code"
-                                        autocomplete="postal-code"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="number"
+                                            name="zip"
+                                            autocomplete="postal-code"
+                                            required>
+                                        <span class="input__label">ZIP Code</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="state"
-                                        placeholder="State"
-                                        autocomplete="on"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="state"
+                                            autocomplete="on"
+                                            required>
+                                        <span class="input__label">State</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="city"
-                                        placeholder="City"
-                                        autocomplete="on"
-                                        required>
-                                    <div class="form__message"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__row">
-                            <div class="form__cell">
-                                <div class="form__group">
-                                    <input class="input"
-                                        type="text"
-                                        name="country"
-                                        placeholder="Country"
-                                        autocomplete="country-name"
-                                        required>
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="city"
+                                            autocomplete="on"
+                                            required>
+                                        <span class="input__label">City</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
@@ -240,11 +245,28 @@
                         <div class="form__row">
                             <div class="form__cell">
                                 <div class="form__group">
-                                    <input class="input"
-                                        type="tel"
-                                        name="phone"
-                                        placeholder="Mobile number (Optional)"
-                                        autocomplete="tel">
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="text"
+                                            name="country"
+                                            autocomplete="country-name"
+                                            required>
+                                        <span class="input__label">Country</span>
+                                    </label>
+                                    <div class="form__message"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__cell">
+                                <div class="form__group">
+                                    <label class="input">
+                                        <input class="input__field"
+                                            type="tel"
+                                            name="phone"
+                                            autocomplete="tel">
+                                        <span class="input__label">Mobile number (Optional)</span>
+                                    </label>
                                     <div class="form__message"></div>
                                 </div>
                             </div>
@@ -264,23 +286,27 @@
                             <div class="form__row">
                                 <div class="form__cell form__cell_2of3">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="text"
-                                            name="b-street"
-                                            placeholder="Street address"
-                                            autocomplete="street-address"
-                                            required
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="text"
+                                                name="b-street"
+                                                autocomplete="street-address"
+                                                required
+                                                disabled>
+                                            <span class="input__label">Street address</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell form__cell_1of3">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="text"
-                                            name="b-apt"
-                                            placeholder="Apt/Suite (Optional)"
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="text"
+                                                name="b-apt"
+                                                disabled>
+                                            <span class="input__label">Apt/Suite (Optional)</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
@@ -288,37 +314,43 @@
                             <div class="form__row">
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="number"
-                                            name="b-zip"
-                                            placeholder="ZIP Code"
-                                            autocomplete="postal-code"
-                                            required
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="number"
+                                                name="b-zip"
+                                                autocomplete="postal-code"
+                                                required
+                                                disabled>
+                                            <span class="input__label">ZIP Code</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="text"
-                                            name="b-state"
-                                            placeholder="State"
-                                            autocomplete="on"
-                                            required
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="text"
+                                                name="b-state"
+                                                autocomplete="on"
+                                                required
+                                                disabled>
+                                            <span class="input__label">State</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="text"
-                                            name="b-city"
-                                            placeholder="City"
-                                            autocomplete="on"
-                                            required
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="text"
+                                                name="b-city"
+                                                autocomplete="on"
+                                                required
+                                                disabled>
+                                            <span class="input__label">City</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
@@ -326,13 +358,15 @@
                             <div class="form__row">
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
-                                            type="text"
-                                            name="b-country"
-                                            placeholder="Country"
-                                            autocomplete="country-name"
-                                            required
-                                            disabled>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="text"
+                                                name="b-country"
+                                                autocomplete="country-name"
+                                                required
+                                                disabled>
+                                            <span class="input__label">Country</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
@@ -357,27 +391,31 @@
                             <div class="form__row">
                                 <div class="form__cell form__cell_2of3">
                                     <div class="form__group payment__card">
-                                        <input class="input"
-                                            type="number"
-                                            name="card"
-                                            placeholder="Credit card number"
-                                            autocomplete="cc-number"
-                                            required>
+                                        <label class="input">
+                                            <input class="input__field"
+                                                type="number"
+                                                name="card"
+                                                autocomplete="cc-number"
+                                                required>
+                                            <span class="input__label">Credit card number</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell form__cell_1of3">
                                     <div class="form__input-group">
                                         <div class="form__group">
-                                            <input class="input"
-                                                type="password"
-                                                name="code"
-                                                placeholder="Security code"
-                                                autocomplete="cc-csc"
-                                                inputmode="numeric"
-                                                pattern="[0-9]*"
-                                                maxlength="4"
-                                                required>
+                                            <label class="input">
+                                                <input class="input__field"
+                                                    type="password"
+                                                    name="code"
+                                                    autocomplete="cc-csc"
+                                                    inputmode="numeric"
+                                                    pattern="[0-9]*"
+                                                    maxlength="4"
+                                                    required>
+                                                <span class="input__label">Security code</span>
+                                            </label>
                                             <div class="form__message"></div>
                                         </div>
                                         <div class="form__hint">
@@ -389,25 +427,29 @@
                             <div class="form__row">
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
+                                        <label class="input">
+                                            <input class="input__field"
                                                 type="number"
                                                 name="exp-month"
-                                                placeholder="MM"
                                                 autocomplete="cc-exp-month"
                                                 list="months"
                                                 required>
+                                            <span class="input__label">MM</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
                                 <div class="form__cell">
                                     <div class="form__group">
-                                        <input class="input"
+                                        <label class="input">
+                                            <input class="input__field"
                                                 type="number"
                                                 name="exp-year"
-                                                placeholder="YYYY"
                                                 autocomplete="cc-exp-year"
                                                 list="years"
                                                 required>
+                                            <span class="input__label">YYYY</span>
+                                        </label>
                                         <div class="form__message"></div>
                                     </div>
                                 </div>
