@@ -1,23 +1,17 @@
 @media (max-width: 750px) {
-    .hidden-phone-down {
+    .hidden-mob {
         display: none !important;
     }
 }
 
-@media (max-width: 1200px) {
-    .hidden-tablet-down {
-        display: none !important;
-    }
-}
-
-@media (min-width: 751px) {
-    .hidden-tablet-up {
+@media (min-width: 751px) and (max-width: 1200px) {
+    .hidden-tab {
         display: none !important;
     }
 }
 
 @media (min-width: 1201px) {
-    .hidden-desktop-up {
+    .hidden-dsk {
         display: none !important;
     }
 }
