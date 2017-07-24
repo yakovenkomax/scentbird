@@ -1,3 +1,7 @@
+::selection {
+    background-color: var(--color-pink-pale);
+}
+
 body {
     font-family: var(--font-family-main);
     font-size: var(--font-size-md);
