@@ -262,6 +262,11 @@ select:-webkit-autofill:focus {
     background-color: var(--color-pink);
     text-transform: uppercase;
     color: #fff;
+    transition: background-color var(--speed-fast) cubic-bezier(0.51, -0.18, 0.26, 1.66);
+}
+
+.button:hover {
+    background-color: var(--color-pink-light);
 }
 
 .button__title {
@@ -270,7 +275,14 @@ select:-webkit-autofill:focus {
 }
 
 .button__icon {
+    position: relative;
+    left: 0;
     margin-left: var(--gap-md);
+    transition: left var(--speed-fast) ease-in-out;
+}
+
+.button:hover .button__icon {
+    left: var(--gap-xs);
 }
 
 @media (max-width: 1200px) {
