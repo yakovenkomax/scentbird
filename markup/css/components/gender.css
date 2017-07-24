@@ -1,0 +1,71 @@
+.gender {
+    display: flex;
+    max-width: 450px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.gender__item {
+    flex-grow: 1;
+    flex-basis: 50%;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: var(--font-size-xl);
+    text-align: center;
+}
+
+.gender__indicator {
+    position: relative;
+    top: 0;
+    display: block;
+    margin-top: 0;
+    margin-bottom: var(--gap-md);
+    border: 0;
+    border-radius: 0;
+    height: 80px;
+    width: auto;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.gender__item_w .gender__indicator {
+    background-image: url(../../img/radio_gender_w.svg);
+}
+
+.gender__item_m .gender__indicator {
+    background-image: url(../../img/radio_gender_m.svg);
+}
+
+.radio__native:checked ~ .gender__indicator {
+    background-color: transparent;
+}
+
+.radio__native:checked ~ .gender__indicator::after {
+    content: url(../../img/radio_gender_check.svg);
+    position: absolute;
+    left: calc(50% + 20px);
+    top: 70px;
+}
+
+.gender__item_w:hover .gender__indicator,
+.gender__item_w .radio__native:checked ~ .gender__indicator {
+    background-image: url(../../img/radio_gender_w_checked.svg);
+}
+
+.gender__item_m:hover .gender__indicator,
+.gender__item_m .radio__native:checked ~ .gender__indicator {
+    background-image: url(../../img/radio_gender_m_checked.svg);
+}
+
+.radio__native:focus ~ .gender__indicator {
+    box-shadow: none;
+}
+
+.gender__item_w .radio__native:focus ~ .gender__indicator {
+    background-image: url(../../img/radio_gender_w_checked.svg);
+}
+
+.gender__item_m .radio__native:focus ~ .gender__indicator {
+    background-image: url(../../img/radio_gender_m_checked.svg);
+}

@@ -12,6 +12,7 @@
 
     /* Layout */
     --max-width: 1200px;
+    --min-width: 320px;
     --gap-xs: 10px;
     --gap-sm: 15px;
     --gap-md: 20px;

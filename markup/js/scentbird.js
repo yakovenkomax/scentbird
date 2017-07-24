@@ -3,6 +3,12 @@
 
     // Validation rules
     const constraints = {
+        gender: {
+            presence: true,
+            email: {
+                message: 'Your gender is required'
+            }
+        },
         email: {
             presence: true,
             email: {

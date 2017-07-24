@@ -165,12 +165,8 @@ select:-webkit-autofill:focus {
     position: relative;
     display: inline-block;
     padding-left: 1.5rem;
+    margin-bottom: var(--gap-md);
     cursor: pointer;
-}
-
-.checkbox_right {
-    padding-left: 0;
-    padding-right: 1.5rem;
 }
 
 .checkbox__native {
@@ -185,16 +181,30 @@ select:-webkit-autofill:focus {
     top: 50%;
     left: 0;
     box-sizing: border-box;
-    display: block;
     width: 16px;
     height: 16px;
     border: 1px solid var(--color-gray);
-    text-align: center;
     background-color: var(--color-gray-light);
-    background-position: center center;
-    background-repeat: no-repeat;
     pointer-events: none;
     user-select: none;
+}
+
+.checkbox__native:checked ~ .checkbox__indicator {
+    color: #fff;
+    border-color: var(--color-pink);
+    background-color: var(--color-pink-light);
+    background-image: url('../img/checkbox.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.checkbox__native:focus ~ .checkbox__indicator {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-pink-pale);
+}
+
+.checkbox_right {
+    padding-left: 0;
+    padding-right: 1.5rem;
 }
 
 .checkbox_right .checkbox__indicator {
@@ -202,16 +212,48 @@ select:-webkit-autofill:focus {
     right: 0;
 }
 
-.checkbox__native:checked ~ .checkbox__indicator {
-    color: #fff;
-    background-color: var(--color-pink-light);
-    border-color: var(--color-pink);
-    background-image: url('../img/checkbox.svg');
-}
-.checkbox__native:focus ~ .checkbox__indicator {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-pink-pale);
+.radio {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5rem;
+    margin-bottom: var(--gap-md);
+    cursor: pointer;
 }
 
+.radio__native {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.radio__indicator {
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    left: 0;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--color-gray);
+    border-radius: 50%;
+    background-color: var(--color-gray-light);
+    pointer-events: none;
+    user-select: none;
+}
+
+.radio__native:checked ~ .radio__indicator {
+    color: #fff;
+    border-color: var(--color-pink);
+    background-color: var(--color-pink-light);
+    background-image: url('../img/radio.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.radio__native:focus ~ .radio__indicator {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-pink-pale);
+}
 
 .button {
     display: flex;
