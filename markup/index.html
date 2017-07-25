@@ -393,9 +393,10 @@
                                     <div class="form__group payment__card">
                                         <label class="input">
                                             <input class="input__field"
-                                                type="number"
+                                                type="text"
                                                 name="card"
                                                 autocomplete="cc-number"
+                                                pattern="[0-9 ]*"
                                                 required>
                                             <span class="input__label">Credit card number</span>
                                         </label>
@@ -471,10 +472,10 @@
                             <div class="page__control">
                                 <button class="button" type="submit">
                                     <div class="button__content" tabindex="-1">
-                                    <span class="button__title">
-                                        Buy now
-                                    </span>
-                                    <img class="button__icon" src="img/arrow.svg">
+                                        <span class="button__title">
+                                            Buy now
+                                        </span>
+                                        <img class="button__icon" src="img/arrow.svg">
                                     </div>
                                 </button>
                             </div>

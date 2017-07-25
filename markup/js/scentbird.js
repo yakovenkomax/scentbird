@@ -248,6 +248,9 @@
 
         if (errors) {
             formGroup.classList.add('form__group_invalid');
+            if (input.value === '') {
+                formGroup.classList.add('form__group_empty');
+            }
 
             errors.forEach((error) => {
                 addError(messageNode, error);
@@ -271,7 +274,7 @@
 
     function resetFormGroup(formGroup) {
         // Remove the success and error classes
-        formGroup.classList.remove('form__group_invalid', 'form__group_valid');
+        formGroup.classList.remove('form__group_invalid', 'form__group_empty', 'form__group_valid');
 
         // Remove error nodes
         formGroup.querySelectorAll('.form__error').forEach((errorBlock) => {

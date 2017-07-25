@@ -51,12 +51,14 @@
 }
 
 .form__error {
+    display: inline-block;
     margin: 0;
-    font-size: var(
-    --font-size-xs);
-    line-height: var(--gap-md);
-    color: var(
-    --color-red);
+    font-size: var(--font-size-xs);
+    line-height: var(--gap-sm);
+    color: var(--color-red);
+}
+.form__error + .form__error::before {
+    content: '. ';
 }
 
 .form__question {
@@ -70,10 +72,8 @@
     box-sizing: border-box;
     height: 100%;
     padding-left: var(--gap-xs);
-    padding-bottom: var(
-    --gap-md);
-    font-size: var(
-    --font-size-sm);
+    padding-bottom: var(--gap-md);
+    font-size: var(--font-size-sm);
 }
 
 .form__hint {
@@ -95,6 +95,7 @@
     border: 1px solid var(--color-gray);
     background-color: var(--color-gray-light);
     -webkit-appearance: none;
+    transition: border-color var(--speed-fast), background-color var(--speed-fast), box-shadow var(--speed-fast);
 }
 
 /* Override default autocomplete arrow */
@@ -159,27 +160,30 @@
     color: var(--color-gray-dark);
     transition: transform var(--speed-fast), font-size var(--speed-fast);
     cursor: text;
+    pointer-events: none;
 }
 
 .form__group_valid .input__label,
-.form__group_invalid .input__label,
+.form__group_invalid:not(.form__group_empty) .input__label,
+.input__field:-webkit-autofill + .input__label,
 .input__field:focus + .input__label {
-    transform: translateY(-45%);
+    transform: translateY(-22px);
     font-size: var(--font-size-sm);
     cursor: default;
 }
 
 .form__group_valid .input__label::after,
-.form__group_invalid .input__label::after,
+.form__group_invalid:not(.form__group_empty) .input__label::after,
+.input__field:-webkit-autofill + .input__label::after,
 .input__field:focus + .input__label::after {
     content: '';
     position: absolute;
     left: var(--gap-xs);
     right: var(--gap-xs);
-    top: calc(50% - 3px);
-    height: 3px;
+    top: calc(50% - 5px);
+    height: 7px;
     background-color: #fff;
-    box-shadow: 0 0 2px 0 #fff;
+    box-shadow: 0 -3px 3px -2px #fff, 0 3px 3px -2px #fff;
     z-index: -1;
 }
 
