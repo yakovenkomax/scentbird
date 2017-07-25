@@ -45,6 +45,10 @@
     height: 20px;
 }
 
+.payment__card.form__group_valid::after {
+    content: url('../../img/lock_valid.svg');
+}
+
 .payment__card .input__field {
     padding-right: var(--gap-xl);
 }
