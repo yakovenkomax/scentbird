@@ -320,4 +320,12 @@
         option.value = currentYear + i;
         yearsDataList.appendChild(option);
     }
+
+    // Input fields formatting
+    const cleaveCard = new Cleave('.input__field[name="card"]', {
+        creditCard: true,
+        onCreditCardTypeChanged: function (type) {
+            // update UI ...
+        }
+    });
 })();
