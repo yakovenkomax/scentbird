@@ -3,12 +3,12 @@
 
     // Validation rules
     const constraints = {
-        gender: {
-            presence: true,
-            email: {
-                message: 'Your gender is required'
-            }
-        },
+        // gender: {
+        //     presence: true,
+        //     email: {
+        //         message: 'Your gender is required'
+        //     }
+        // },
         email: {
             presence: true,
             email: {
@@ -43,21 +43,21 @@
         country: {
             presence: true
         },
-        'b-street': {
-            presence: true
-        },
-        'b-zip': {
-            presence: true
-        },
-        'b-state': {
-            presence: true
-        },
-        'b-city': {
-            presence: true
-        },
-        'b-country': {
-            presence: true
-        },
+        // 'b-street': {
+        //     presence: true
+        // },
+        // 'b-zip': {
+        //     presence: true
+        // },
+        // 'b-state': {
+        //     presence: true
+        // },
+        // 'b-city': {
+        //     presence: true
+        // },
+        // 'b-country': {
+        //     presence: true
+        // },
         card: {
             presence: true,
             card: true
@@ -205,7 +205,7 @@
     };
 
     const form = document.querySelector('.form');
-    const inputs = form.querySelectorAll('.input__field, .textarea, .select');
+    const inputs = form.querySelectorAll('.input__field');
 
     // Attach validation to form submit
     form.addEventListener('submit', (event) => {
@@ -231,7 +231,7 @@
 
     // Show form errors
     function showErrors(form, errors) {
-        const inputs = form.querySelectorAll('.input__field, .textarea, .select');
+        const inputs = form.querySelectorAll('.input__field');
 
         inputs.forEach((input) => {
             showErrorsForInput(input, errors && errors[input.name]);
@@ -292,24 +292,24 @@
     }
 
     function showSuccess() {
-        console.log('Success!');
+        alert('Success!');
     }
 
     // Billing address show/hide
     const billingNode = document.querySelector('.billing');
-    const billingInputs = billingNode.querySelectorAll('.input__field, .textarea, .select');
+    const billingInputs = billingNode.querySelectorAll('.input__field');
     const billingCheckbox = document.querySelector('.js-billing');
 
     billingCheckbox.addEventListener('change', (event) => {
         if (event.target.checked === true) {
             billingNode.classList.add('billing_hidden');
             billingInputs.forEach((input) => {
-                input.disabled = true;
+                input.setAttribute('disabled', '');
             });
         } else {
             billingNode.classList.remove('billing_hidden');
             billingInputs.forEach((input) => {
-                input.disabled = false;
+                input.removeAttribute('disabled');
             });
         }
     });
