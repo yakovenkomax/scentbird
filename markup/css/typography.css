@@ -34,7 +34,7 @@ body {
 
 .link {
     text-decoration: none;
-    background-image: linear-gradient(to bottom, currentColor 50%,rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to bottom, currentColor 50%, rgba(0,0,0,0) 50%);
     background-repeat: repeat-x;
     background-size: 2px .1em;
     background-position: 0 1.07em;
@@ -49,8 +49,23 @@ body {
 }
 
 .link_dashed {
-    background-image: linear-gradient(to right, currentColor 50%,rgba(0,0,0,0) 50%);
+    background-image: linear-gradient(to right, currentColor 50%, rgba(0,0,0,0) 50%);
     background-size: 0.4em .1em;
+}
+
+.link:focus > .link__content {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-pink-pale);
+}
+
+/* Removing the focus ring styles specifically for link in Firefox */
+.link:not(:-moz-focusring):focus > .link__content {
+    box-shadow: none;
+}
+
+/* Removing default outline only after we've added our custom one */
+.link:focus,
+.link__content:focus {
+    outline: none;
 }
 
 @media (max-width: 1200px) {

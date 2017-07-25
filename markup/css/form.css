@@ -292,17 +292,41 @@
 }
 
 .button {
+    border: 0;
+    padding: 0;
+}
+
+.button__content {
     display: flex;
     padding: var(--gap-sm) var(--gap-lg);
-    border: 0;
+    position: relative;
     background-color: var(--color-pink);
     text-transform: uppercase;
     color: #fff;
     transition: background-color var(--speed-fast) cubic-bezier(0.51, -0.18, 0.26, 1.66);
 }
 
-.button:hover {
+.button:hover > .button__content {
     background-color: var(--color-pink-light);
+}
+
+.button:active > .button__content {
+    background-color: var(--color-pink-pale);
+}
+
+.button:focus > .button__content {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px var(--color-pink-pale);
+}
+
+/* Removing the focus ring styles specifically for button in Firefox */
+.button:not(:-moz-focusring):focus > .button__content {
+    box-shadow: none;
+}
+
+/* Removing default outline only after we've added our custom one */
+.button:focus,
+.button__content:focus {
+    outline: none;
 }
 
 .button__title {
