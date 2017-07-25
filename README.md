@@ -1,5 +1,7 @@
 # scentbird
 
+![Scentbird](https://github.com/yakovenkomax/scentbird-task/raw/master/mockups/Payment%20Page%20Copy.jpg)
+
 ## Описание задания
 В аттаче лежит файлы дизайна страницы для покупки подарочной подписки.
 Тебе нужно сделать верстку Payment Page Copy и Payment Page mobile Copy, cамо собой страница одна.
