@@ -80,6 +80,10 @@
     .payment__cards {
         justify-content: flex-start;
     }
+
+    .payment__date-row {
+        flex-direction: row;
+    }
 }
 
 

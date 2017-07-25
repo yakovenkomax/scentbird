@@ -83,7 +83,7 @@
         flex-grow: 1;
     }
 
-    .page__control.hidden-phone-down + .page__control {
+    .page__control + .page__control {
         margin-left: 0;
     }
 }

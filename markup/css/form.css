@@ -95,7 +95,7 @@
     border: 1px solid var(--color-gray);
     background-color: var(--color-gray-light);
     -webkit-appearance: none;
-    transition: border-color var(--speed-fast), background-color var(--speed-fast), box-shadow var(--speed-fast);
+    transition: border-color var(--speed-fast), background-color var(--speed-fast);
 }
 
 /* Override default autocomplete arrow */
@@ -350,7 +350,7 @@
 }
 
 @media (max-width: 1200px) {
-    .button {
+    .button__content {
         padding-left: var(--gap-xl);
         padding-right: var(--gap-xl);
     }
