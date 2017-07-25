@@ -432,7 +432,9 @@
                                                 name="exp-month"
                                                 autocomplete="cc-exp-month"
                                                 list="months"
-                                                required>
+                                                required
+                                                min="0"
+                                                max="12">
                                             <span class="input__label">MM</span>
                                         </label>
                                         <div class="form__message"></div>
@@ -446,7 +448,9 @@
                                                 name="exp-year"
                                                 autocomplete="cc-exp-year"
                                                 list="years"
-                                                required>
+                                                required
+                                                min="2017"
+                                                max="2100">
                                             <span class="input__label">YYYY</span>
                                         </label>
                                         <div class="form__message"></div>
