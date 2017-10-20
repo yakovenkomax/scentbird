@@ -1,5 +1,7 @@
 # scentbird
 
+Result: 👍
+
 ![Scentbird](https://github.com/yakovenkomax/scentbird-task/raw/master/mockups/Payment%20Page%20Copy.jpg)
 
 ## Описание задания
